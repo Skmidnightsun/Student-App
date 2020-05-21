@@ -4,72 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
     android:weightSum="8"
-    android:layout_marginLeft="16dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginEnd="16dp"
+    android:background="@drawable/back1"
     >
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:typeface="serif"
+
+    <ImageView
+        android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:text="@string/aec"
-        android:textColor="@color/cardview_dark_background"
-        android:textSize="120sp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="90dp"
+        android:src="@drawable/logo1" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/email"
         android:maxLines="1"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
+        android:textColor="#F4F0F2"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:hint="@string/email"
+        android:textSize="30dp"
         />
+
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/pass"
         android:maxLines="1"
+        android:gravity="center"
         android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
         android:layout_height="0dp"
         android:layout_weight="1"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:fontFamily="serif-monospace"
         android:inputType="textPassword"
+        android:textStyle="bold"
         android:hint="@string/password"
-        />
-    <androidx.appcompat.widget.AppCompatButton
-        android:backgroundTint="@color/colorAccent"
+        android:textSize="28dp"
         android:textColor="#FFFFFF"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signIn"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginEnd="120dp"
         android:layout_weight="1"
+        android:backgroundTint="#A8559513"
         android:text="@string/sign_in"
-        />
+        android:textColor="#FFFFFF" />
+
+
     <androidx.appcompat.widget.AppCompatButton
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="#FFFFFF"
         android:id="@+id/signUp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginEnd="120dp"
         android:layout_weight="1"
+        android:backgroundTint="#A8559513"
         android:text="@string/sign_up"
-        />
+        android:textColor="#FFFFFF" />
+
 
     <ProgressBar
         android:id="@+id/progressBar"
-        android:layout_marginLeft="128dp"
-        android:layout_marginStart="128dp"
+        style="?android:attr/progressBarStyleLarge"
         android:layout_width="50dp"
         android:layout_height="0dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="128dp"
         android:layout_weight="1"
-        style="?android:attr/progressBarStyleLarge"
-        android:visibility="invisible"
-        />
+        android:visibility="invisible" />
 
 </LinearLayout>
