@@ -111,6 +111,9 @@ public class LogedIN extends AppCompatActivity
             selectedFrag = new Calender();
             getSupportActionBar().setTitle("Events");
         }
+        else if (id == R.id.map) {
+            startActivity(new Intent(this, MapsActivity.class));
+        }
         else if(id==R.id.extras)
         {
             selectedFrag = new extras();
