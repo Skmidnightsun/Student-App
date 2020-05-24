@@ -11,6 +11,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Calendar;
+import java.util.Map;
 import java.util.Objects;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -72,9 +73,6 @@ public class LogedIN extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -92,23 +90,41 @@ public class LogedIN extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        Fragment selectedFrag = new BlankFragment();
-        if (id == R.id.marks) {
+        Fragment selectedFrag = new profile();
+        if (id==R.id.profile)
+        {
+            selectedFrag = new profile();
+            getSupportActionBar().setTitle("My Profile");
+
+        }
+        else if (id == R.id.marks) {
             // Handle the marks fragment
             selectedFrag = new BlankFragment();
-            //getSupportActionBar().setTitle("Marks");
+            getSupportActionBar().setTitle("Marks");
 
         } else if (id == R.id.attendence) {
             selectedFrag = new Attendence_Fragment();
-            //getSupportActionBar().setTitle("Attendence");
+            getSupportActionBar().setTitle("Attendence");
 
         }else if(id==R.id.calendarView)
         {
             selectedFrag = new Calender();
+            getSupportActionBar().setTitle("Events");
         }
-        else if(id==R.id.cAView)
+        else if(id==R.id.extras)
         {
-            selectedFrag = new Advertisment();
+            selectedFrag = new extras();
+            getSupportActionBar().setTitle("Extras");
+        }
+        else if(id==R.id.contact)
+        {
+            selectedFrag = new contact();
+            getSupportActionBar().setTitle("Contacts");
+        }
+        else if(id==R.id.map)
+        {
+            selectedFrag = new Fragment();
+            getSupportActionBar().setTitle("Map");
         }
         else if (id == R.id.logout) {
             FirebaseAuth.getInstance().signOut();

@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.widget.Toast;
 
+import com.example.clgapp.GeofenceHelper;
 import com.google.android.gms.location.Geofence;
 import com.google.android.gms.location.GeofencingClient;
 import com.google.android.gms.location.GeofencingRequest;

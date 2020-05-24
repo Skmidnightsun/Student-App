@@ -38,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="45dp"
                 android:text="98"
+                android:textColor="#FBFBFA"
                 android:textStyle="bold"
                 android:textSize="25sp"
                 />
@@ -62,6 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="100"
+                android:textColor="#FBFBFA"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="25dp"
