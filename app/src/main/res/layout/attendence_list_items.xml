@@ -41,6 +41,7 @@
                 android:layout_marginLeft="45dp"
                 android:text="@string/_98"
                 android:textSize="25sp"
+                android:textColor="#FBFBFA"
                 android:layout_marginStart="45dp" />
             <TextView
                 android:textColor="#96FF9800"
@@ -65,6 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_100"
+                android:textColor="#FBFBFA"
                 android:textSize="25sp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginStart="25dp" />

@@ -102,7 +102,15 @@ public class LogedIN extends AppCompatActivity
             selectedFrag = new Attendence_Fragment();
             //getSupportActionBar().setTitle("Attendence");
 
-        } else if (id == R.id.logout) {
+        }else if(id==R.id.calendarView)
+        {
+            selectedFrag = new Calender();
+        }
+        else if(id==R.id.cAView)
+        {
+            selectedFrag = new Advertisment();
+        }
+        else if (id == R.id.logout) {
             FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(LogedIN.this,MainActivity.class));
             finish();

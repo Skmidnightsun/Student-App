@@ -17,7 +17,7 @@
             android:icon="@drawable/ic_people_black_24dp"
             android:title="Attendence" />
         <item
-            android:id="@+id/calender"
+            android:id="@+id/calendarView"
             android:icon="@drawable/ic_event_black_24dp"
             android:title="Calendar" />
         <item
