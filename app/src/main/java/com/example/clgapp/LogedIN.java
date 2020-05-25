@@ -104,7 +104,7 @@ public class LogedIN extends AppCompatActivity
 
         } else if (id == R.id.attendence) {
             selectedFrag = new Attendence_Fragment();
-            getSupportActionBar().setTitle("Attendence");
+            getSupportActionBar().setTitle("Attendance");
 
         }else if(id==R.id.calendarView)
         {
